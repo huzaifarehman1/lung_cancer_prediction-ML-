@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report,accuracy_score
 from imblearn.over_sampling import RandomOverSampler
 # Parameters
 
-PATH = "/home/huzaifa/code/AI/Machine_learning/lung_cancer_prediction-ML-/survey lung cancer.csv"
+PATH = "survey lung cancer.csv"
 ignored = []
 
 # reading and filtering data
@@ -63,7 +63,7 @@ print("\n🏆 Best Model:", best_perc[2], f"with Accuracy = {best_perc[1]:.4f} a
 
 
 
-Perc = 20
+Perc = 20 
 Perc /= 100
 data["GENDER"] = data["GENDER"].apply(lambda x: 0 if x=="M" else 1)
 
